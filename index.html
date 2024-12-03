@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <input type="text" id="city-input" placeholder="Enter city name" class="search-bar">
+      <button id="search-btn" class="search-btn">Search</button>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Main Weather Info -->
+    <main class="main">
+      <div class="current-weather">
+        <h1 id="city-name">City Name</h1>
+        <h2 id="temperature">-- °C</h2>
+        <p id="weather-description">Weather Description</p>
+      </div>
+    </main>
+
+    <!-- Footer: Weekly Forecast -->
+    <footer class="forecast">
+      <h3>Weekly Forecast</h3>
+      <div id="forecast-container" class="forecast-container">
+        <!-- Forecast cards will be dynamically added here -->
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
